@@ -104,6 +104,19 @@ li{
     text-decoration: underline;
 }
 
+#wrapper--techstack__items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+.card--techstack{
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+}
 
 .card--work-history{
     border-left: 1px solid var(--mainBorderColor);
