@@ -104,6 +104,10 @@ li{
     text-decoration: underline;
 }
 
+#hyperlink a:hover{
+    text-decoration: underline;
+}
+
 #wrapper--techstack__items{
     display: flex;
     flex-wrap: wrap;
