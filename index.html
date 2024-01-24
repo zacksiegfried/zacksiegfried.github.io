@@ -1,127 +1,121 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
+<html lang="en" data-bs-theme="auto">
+
+
+<head><script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Zachary Siegfried</title>
-    <meta name='viewport' content='width=divice-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/main.css'>
+
+    <title>Biochemical Code</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-static/">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+    <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <meta name="theme-color" content="#712cf9">
+
+    
+    <!-- Custom styles for this template -->
+    <link href="navbar-static.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/css/bootswatch.min.css" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
 </head>
+
+
+
 <body>
 
-    <div id="container--main">
+    <nav class="navbar navbar-expand-md navbar-dark bg-body-primary mb-4 mt-4 container">
+        <div class="container-fluid flex">
 
-        <section id="wrapper--hero" class="sectiion--page">
-            <img id="profile-pic" src="./assets/images/image_6487327.JPG"/>
+            <a class="navbar-brand" href="#">Biochemical Code Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <div>
-                <h1 id="user-name">Zachary Siegfried</h1>
-                <p id="bio">Health Data Scientist interested in developing bioinformatics software tools</p>
-                <p id="email">zack.siegfried7@gmail.com</p>
-            </div>
-        </section>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
 
-        <section class="section--page">
-        
-            <div id="socials--list">
-                <a href="https://www.linkedin.com/in/zack-siegfried-434634152/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/zacksiegfried" target="_blank">GitHub</a>
-                <a href="./assets/Zack_Siegfried_Resume.pdf" target="_blank">Download Resume</a>
-            </div>
-        </section>
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
 
-       <section class="section--page">
-            <h2>Skills and Qualifications</h2>
-            <ul id="qualifications--list">
-                <li>3+ years of experience in clinical trial study design and data analysis</li>
-                <li>Worked with Dr. Ali Rahnavard's lab to help build multiple bioinformatics software tools for omics data processing | <a href="https://github.com/omicsEye" target="_blank">Omics Eye GitHub Page</a></li>
-                <li>Trained in wet lab techniques at the University of Virginia focusing on molecular biology and genetics</li>
-            </ul>
-       </section>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="articles.html">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                    </li>
 
-       <section class="section--page">
-            <h2>Tech Stack</h2>
-
-            <div id="wrapper--techstack__items">
-                <div class="card--techstack"><span>Python, R, SAS, Linux</span></div>
-                <div class="card--techstack"><span>Git, AWS</span></div>
-            </div>
-        </section>
-
-       <section id="work-history-wrapper" class="section--page">
-            <h2>Statistical Analysis Projects</h2>
-
-            <div class="card--work-history">
-                <strong>MCED screening test development</strong>
-                <p>Exact Sciences &#183; Jul 2023 - Present</p>
-                <p>Providing statistical support for Exact Sciences multi-cancer early detection LDT and IDE. Collaborate with R&D, Lab Ops, Bioinformatics and Data Management teams to advance the development of MCED product.</p>
-                <ul>
-                    <!--   <li>Design statistical analysis plans for analytical and clinical trails</li>    -->
                 </ul>
 
-                <strong>Analysis toolset for National Cancer Institute GDC methylation data</strong>
-                <p>George Washington University &#183; Feb 2023 - May 2023</p>
-                <p id="hyperlink">Built a variety of data management and statistical analysis software tools for operating on NCI GDC data portal methylation data | <a href="https://github.com/zacksiegfried/methylspan" target="_blank">methylspan</a></p>
-                <ul>
-                    <li>Functions for standardized loading of methylation beta arrays by cancer primary site into python with ability to download</li>
-                    <li>Data management and visualization functions including dimension reductions techniques such as PCA</li>
-                    <li>Survival analysis functions for modeling multiple patient longevity metrics post-diagnosis</li>
-                </ul>
-
-                <strong>Loy002 Metabolic Reversal clinical trial</strong>
-                <p>Cellular Longevity Inc &#183; Jul 2022 - Jan 2023</p>
-                <p>Worked on the Loy002 drug clinical trial statistical analysis team. Helped to progress the first ever drug aimed at extending canine healthspan towards market.</p>
-                <ul>
-                    <li>Designed automated data analysis pipelines to more efficiently and accurately analyze longitudinal clinical trial biomarker data</li>
-                    <li>Worked with the data science and engineering team to build companywide bioinformatics infrastructure on GitHub</li>
-                    <li>Helped to compile statistical portions of FDA submissions</li>
-                </ul>
-
-                <strong>AutDB database maintenance</strong>
-                <p>MindSpec &#183; Jun 2021 - Jun 2022</p>
-                <p>Performed meta-analysis on the relationship between autism spectrum disorder and motor coordination deficits in collaboration with Columbia University. Study was aimed at expanding diagnosis criteria in children to include quantitative measures.</p>
-
-                <strong>Rural telemedicine public health research</strong>
-                <p>University of Virginia &#183; Aug 2019 - May 2021</p>
-                <p>Carried out financial policy research into the reimbursement of telemedicine care providers by health insurance firms. Research was aimed at expanding telemedicine access in rural Virginia.</p>
-                <ul>
-                    <li>Worked on research study design, population sampling methods, and data analysis. Collaborated with Dr. Pamela DeGuzman to publish two research papers:</li>
-                    <ul id="hyperlink">
-                        <li>Improving Equitable Access to Care Via Telemedicine in Rural Public Libraries. Pamela B. DeGuzman PhD, RN | Zack Siegfried B.S. | Alec Scicchitano B.A. | Neha Jain | Setareh Abooali (2021) <a href="https://doi.org/10.1111/phn.12981" target="_blank">Link</a></li>
-                        <li>Evaluation of rural public libraries to address telemedicine inequities. Pamela B. DeGuzman PhD, RN | Megan Leimkuhler BA | Zack Siegfried (2020) <a href="https://doi.org/10.1111/phn.12777" target="_blank">Link</a></li>
-                    </ul>
-                </ul>
-
-            </div>
-
-       </section>
-
-       <section id="education-wrapper" class="section--page">
-            <h2>Education</h2>
-
-            <div class="card--education">
-                <strong>The George Washington University - Milken Institute of Public Health</strong>
-                <p>Master of Public Health in Biostatistics</p>
-                <p>Sep 2021 - May 2023</p>
-                <ul>
-                    <li><i>Graduate Teaching Assistant:</i> PUBH 6853 - Data Management and Analysis</li>
-                    <li><i>Relevant coursework:</i> Linear Regression, Survival Analysis, Categorical Analysis, Bioinformatics Algorithms, Computational Biology, HPC and Cloud Computing, Epidemiological Methods, Clinical Trial Design</li>
-                </ul>
-
-                <strong>The University of Virginia</strong>
-                <p>B.S. in Chemistry with a specialization in Biochemistry</p>
-                <p>Aug 2017 - May 2021</p>
-                <ul>
-                    <li><i>Activities:</i> Men's Rugby Club, Biology Society, WTJU Charlottesville Radio Station</li>
-                </ul>
-
+                <!--Search button-->
+                <!--form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form-->
             </div>
 
         </div>
+    </nav>
 
-   </section>
+    <main class="container">
+        <div style="width: 50%; float:left">
+            <div class="bg-body-primary rounded">
+                <h1 class=""first-name>Bio<span></span></h1>
+                <h1 class="last-name">project log</h1>
+                <ul>
+                    <!--Project list-->
+                    <li>
+                        <div class="feature col p-2">
+                            <h3 class="fs-2">Building a fantasy soccer web app</h3>
+                            <p>Using django to redesign fantasy Premier League. </p>
+                            <a href="about.html" class="icon-link">
+                                Ask me about it/help me with it
+                            </a>
+                        </div>
+                    </li>
 
-    </div>
+                    <li>
+                        <div class="feature col p-2">
+                            <h3 class="fs-2 icon-link">Displaying live web data using django</h3>
+                            <p>Working out the best way to display data from other parts of the internet in a django app.
+                               Possibly using a scheduler to scrape web data assigning to a django model.
+                            </p>
+                            <a href="#" class="icon-link">
+                                Read more
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div style="width: 50%; float:right">
+            <!--img id="home-page-side-image" src="" width="400" height="1000"/-->
+
+        </div>
+    </main>
+
+
+    <!--JS imports-->
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/js/main.js"></script>
 
 </body>
+
+
 </html>
