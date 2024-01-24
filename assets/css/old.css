@@ -1,3 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --mainTextColor-light:#000;
+    --secondaryTextColor-light:rgb(51 51 51);
+    --mainLinkColor-light:#0da2b8;
+    --mainBorderColor-light:rgb(218, 218, 218);
+    --mainBgColor-light:rgb(249, 250,251);
+
+    --mainTextColor-dark:#fff;
+    --secondaryTextColor-dark:#adb0b1;
+    --mainLinkColor-dark:rgb(30, 190,214);
+    --mainBorderColor-dark:#2b3031;
+    --mainBgColor-dark:#131415;
+    
+    --mainTextColor:var(--mainTextColor-dark);
+    --secondaryTextColor:var(--secondaryTextColor-dark);
+    --mainLinkColor:var(--mainLinkColor-dark);
+    --mainBorderColor:var(--mainBorderColor-dark);
+    --mainBgColor:var(--mainBgColor-dark);
+
+}
+
+*{
+    font-family: 'Readex Pro';
+    line-height: 1.5em;
+    box-sizing: boarder-box;
+    color: var(--mainTextColor);
+}
+
+body{
+    background-color: var(--mainBgColor);
+}
+
+p, span, li{
+    color: var(--secondaryTextColor);
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-weight: 500;
+}
+
+li{
+    line-height: 1.9em;
+}
+
 
 #container--main{
     max-width: 700px;
@@ -67,8 +116,8 @@
 }
 
 .card--techstack{
-    border: 1.5px solid white;
-    border-radius: 10px;
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
     padding: 0.5em 1em;
     align-items: center;
 }
@@ -114,78 +163,3 @@
         padding-left: 0;
     }
 }
-
-
-
-.last-name{
-    font-size: 50px;
-    color: #fcd032;
-    border-bottom: 4px solid #fcd032;
-}
-
-
-.flex { 
-	display: flex; 
-}
-
-.one {
-flex: 2 1 0;
-}
-
-.two {
-flex: 0 1 0;
-}
-
-.three {
-flex: 16.5 1 0;
-}
-
-
-h1 {
-    color: #ffb007;
-    font-size: 65px;
-    font-weight: bold;
-}
-h1 span {
-    color: #ffb007;
-    position: relative;
-}
-h1 span::before {
-    content: "";
-    height: 70px;
-    width: 2px;
-    position: absolute;
-    top: 50%;
-    right: -8px;
-    background: white;
-    transform: translateY(-45%);
-    animation: blink 0.7s infinite;
-}
-h1 span.stop-blinking::before {
-    animation: none;
-}
-@keyframes blink {
-    50% { opacity: 0 }
-}
-
-.my-name {
-    font-size: 50px;
-    color: #ffb007;
-}
-
-.introduction {
-    color: #fcd032;
-    font-size: 25px;
-}
-
-.heading-text {
-    color: #fbbb5a;
-}
-
-
-.dividing-border {
-    border-top: 2px solid white;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
